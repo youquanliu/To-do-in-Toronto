@@ -18,5 +18,5 @@ Pick a date to see what events are happening in Toronto. Interested in something
 
 ## Getting Started
 
-### Click to [view the page](https://explore-bloor.herokuapp.com)
+### Click to [view the page](https://youquanliu.github.io/To-do-in-Toronto/)
 
