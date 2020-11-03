@@ -1,0 +1,142 @@
+header {
+    height: 100vh;
+    background-color: black;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #ffffff83, #ffffff28), url(../assets/daryan-shamkhali-hBoMmiVtU3Y-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+    background-attachment: fixed;
+}
+
+
+header,
+.headerDate,
+.submit {
+    text-align: center;
+}
+
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: $headerFont;
+    color: rgba(27, 27, 27, 0.75);
+    @include fontSize(120);
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+label {
+    font-family: $bodyFont;
+    color: rgba(27, 27, 27, 0.75);
+    @include fontSize(24);
+    margin-top: 110px;
+    padding-bottom: 20px;
+}
+
+.headerDate {
+    margin: 20px;
+}
+
+// Referenced from http://jsfiddle.net/plan/V2Q58/
+    /* Removes the clear button from date inputs */
+input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+
+/* Removes the spin button */
+input[type="date"]::-webkit-inner-spin-button { 
+    display: none;
+}
+
+/* Always display the drop down caret */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #2c3e50;
+}
+
+/* A few custom styles for date inputs */
+input[type="date"] {
+    background-color: whitesmoke;
+    width: 265px;
+    appearance: none;
+    -webkit-appearance: none;
+    color: rgba(27, 27, 27, 0.75);
+    font-family: $bodyFont;
+    @include fontSize(26);
+    border: none;
+    padding: 10px;
+    padding-left: 25px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+input[type="date"], focus {
+    color: rgba(27, 27, 27, 0.75);
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+input[type="submit"]:focus {
+    border: whitesmoke;
+    transform: scale(1.1);
+}
+
+.submit {
+    width: 140px;
+    color: whitesmoke;
+    background-color: rgba(27, 27, 27, 0.75);
+    margin: 0 auto;
+    padding: 5px;
+    padding-top:8px;
+    border: none;
+    border-radius: 5px;
+    font-family: $bodyFont;
+    margin-top: 20px;
+    @include fontSize(26);
+}
+
+.submit:hover {
+    cursor: pointer;
+}
+
+.submit:active {
+    background-color: whitesmoke;
+    color: rgba(27, 27, 27, 0.75);
+    cursor: pointer;
+}
+
+i {
+    color: whitesmoke;
+    @include fontSize(40);
+    position: absolute;
+    bottom: 35px;
+    left: calc((100% / 2) - 20px);
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+
+@media (max-width: 810px){
+    h1 {
+        @include fontSize(95);
+    }
+}
+
+@media (max-width: 680px){
+    h1 {
+        @include fontSize(70);
+    }
+}
