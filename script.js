@@ -17,6 +17,7 @@ app.sortSportsDuplicates = function(result) {
     let noDuplicates = [];
     // Going through API object to retrieve endpoints and appending to HTML
     arrayData.forEach(function(item){
+        
         const genre = item.classifications[0].segment.name;
         const nameOfEvent = item.name;
         const venue = item._embedded.venues[0].name;

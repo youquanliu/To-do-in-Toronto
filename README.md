@@ -3,8 +3,8 @@
 Pick a date to see what events are happening in Toronto. Interested in something? Click it to buy tickets.
 
 
-![Page One](project-toDoInTo.png?raw=true "First page of App")
-![Page Two](project-toDoInTo2.png?raw=true "Second page of App")
+![Page One](assets/project-toDoInTo.png?raw=true "First page of App")
+![Page Two](assets/project-toDoInTo2.png?raw=true "Second page of App")
 
 
 ## Techologies Used
